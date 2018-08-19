@@ -17,11 +17,13 @@ class Instructor::CoursesController < ApplicationController
   end
 
   def show
+    @section = Section.new
+    @lesson = Lesson.new
   end
 
   private
   def require_authorized_for_current_course
-    if current_course.user != current_course
+    if current_course.user != current_user
       render plain: "Unauthorized", status: :Unauthorized
     end
   end
@@ -33,7 +35,7 @@ class Instructor::CoursesController < ApplicationController
   end
 
   def course_params
-    params.require(:course).permit(:title, :description, :cost)
+    params.require(:course).permit(:title, :description, :cost, :image)
   end
 
 end

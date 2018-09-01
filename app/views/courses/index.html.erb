@@ -9,14 +9,13 @@
         <br /><br />
           <%= image_tag course.image, class: 'img_fluid' %></h2>
             <br />
-              <div class= "col-12">
+              <div class= "col-10 offset-1">
                 <%= course.description %>
               </div>
           <div class="col-12 text-center">
             <%= link_to 'More Details', course_path(course), class: 'btn btn-primary btn-large' %>
           </div>
-        </div>
+        
       <br class="clr">
     <% end %>
-  </div>
 </div>

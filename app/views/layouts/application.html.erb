@@ -49,11 +49,43 @@
   </div>
 <div id="footer">
   <div class="container">
-    <b> Teachers </b>
-      <br />
+     <div class="row">
+      <div class="col-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
         <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
       </div>
-    </div>  
+      <div class="col-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', '#' %>
+        <br />
+        <%= link_to 'Careers', '#' %>
+        <br />
+        <%= link_to 'Privacy Policy', privacy_path %>
+      </div>
+      <div class="col-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        aslamimehdi@gmail.com
+        <br />
+        Tracy CA, 95376
+      </div>
+      <div class="col-12 col-sm-3 social">
+        <b>Social</b>
+        <br />
+        <br />
+        <%= link_to 'https://github.com/mehdias' do %>
+          <span class="fa fa-github-square fa-2x social-button"></span>
+        <% end %>
+          <span class="fa fa-facebook-square fa-2x social-button"></span>
+          <span class="fa fa-twitter-square fa-2x social-button"></span>
+      </div>
+    </div>
+  </div>
+</div>  
     <script src="https://vjs.zencdn.net/7.1.0/video.js">
     <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
     </script>
